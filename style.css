@@ -19,6 +19,7 @@ button{
     border-radius: 5px;
     background-color: hsl(71, 73%, 54%);
     color: #ffffffcd;
+    font-size: 16px;
     font-weight: 700;
     box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.1);
 }
@@ -30,7 +31,7 @@ p {
 }
 
 .container{
-    max-width: 720px;
+    max-width: 600px;
     display: grid;
     grid-template-columns: 1fr 0.5fr 0.5fr;
     margin: auto;
@@ -40,7 +41,7 @@ p {
     background-color: white;
     grid-area: 1/1/1/4;
     color: hsl(218, 22%, 67%,0.7);
-    padding: 40px;
+    padding: 30px;
     border-radius: 10px 10px 0 0;
     
 }
@@ -48,14 +49,14 @@ p {
     grid-area: 2/1/2/2;
     background-color: hsl(179, 62%, 43%);
     color: hsl(204, 43%, 93%);
-    padding: 40px;
+    padding: 30px;
     border-radius: 0 0 0 10px;
 }
 .grid-item3 {
     grid-area: 2/2/2/4;
     background-color: hsla(179, 62%, 43%, 0.8);
-    color: hsl(204, 43%, 93%,0.7);
-    padding: 40px;
+    color: hsl(204, 43%, 93%,0.9);
+    padding: 30px;
     border-radius: 0 0 10px 0;
 }
 
@@ -68,7 +69,7 @@ p {
     line-height: 1.5;
 }
 .grid-item2 p {
-    color: hsl(204, 43%, 93%,0.7);
+    color: hsl(204, 43%, 93%);
 }
 
 .guarantee {
@@ -83,7 +84,7 @@ p {
 .per-month {
     font-size: 16px;
     font-weight: 400;
-    color: hsl(204, 43%, 93%,0.6);
+    color: hsl(204, 43%, 93%,0.8);
     padding-left: 10px;
     position: relative;
     bottom: 5px;
