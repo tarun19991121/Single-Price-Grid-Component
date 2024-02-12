@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    place-content: center;
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+}
+h2, h3{
+    width: fit-content;
+}
+
+button{
+    border: 0;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: hsl(71, 73%, 54%);
+    color: #ffffffcd;
+    font-weight: 700;
+    box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.1);
+}
+button:hover{
+    cursor: pointer;
+}
+p {
+    font-weight: 400;
+}
+
+.container{
+    max-width: 720px;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr;
+    margin: auto;
+}
+
+.grid-item1 {
+    background-color: white;
+    grid-area: 1/1/1/4;
+    color: hsl(218, 22%, 67%,0.7);
+    padding: 40px;
+    border-radius: 10px 10px 0 0;
+    
+}
+.grid-item2 {
+    grid-area: 2/1/2/2;
+    background-color: hsl(179, 62%, 43%);
+    color: hsl(204, 43%, 93%);
+    padding: 40px;
+    border-radius: 0 0 0 10px;
+}
+.grid-item3 {
+    grid-area: 2/2/2/4;
+    background-color: hsla(179, 62%, 43%, 0.8);
+    color: hsl(204, 43%, 93%,0.7);
+    padding: 40px;
+    border-radius: 0 0 10px 0;
+}
+
+.grid-item1 h2 {
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 30px;
+}
+.grid-item1 p {
+    padding-right: 60px;
+    line-height: 1.5;
+}
+.grid-item2 p {
+    color: hsl(204, 43%, 93%,0.7);
+}
+
+.guarantee {
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+}
+
+.grid-item3 p {
+    margin: 5px 5px 5px 0;
+}
+
+.per-month {
+    font-size: 16px;
+    font-weight: 400;
+    color: hsl(204, 43%, 93%,0.6);
+    padding-left: 10px;
+    position: relative;
+    bottom: 5px;
+}
+.sub-heading {
+    color: white;
+}
+
+@media only screen and (max-device-width: 500px){
+    
+    h2, h3{
+        margin-top: 0;
+    }
+    h1 {
+        margin: 0;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-width: 360px;
+        justify-content: center;
+        /* margin-top: 100px; */
+        margin-bottom: auto;
+    }
+    .grid-item1 {
+        border-radius: 5px 5px 0 0;
+        padding: 30px;
+    }
+    .grid-item2 {
+        border-radius: 0;
+        padding: 30px;
+    }
+    .grid-item3 {
+        border-radius: 0 0 5px 5px;
+        padding: 30px;
+    }
+    .grid-item1 p {
+        padding: 0;
+        line-height: 2;
+    }
+    .grid-item2 p {
+        margin: 10px 0 40px 0;
+    }
+}
